@@ -1,0 +1,68 @@
+export default {
+  products: [
+        {
+            _id: '1',
+            img: '/img/mistral.jpg',
+            name: 'Pisco Mistral',
+            category: 'Pisco',
+            price: 15000,
+            discount: 20,
+        },
+        {
+            _id: '2',
+            img: '/img/mistral.jpg',
+            name: 'Pisco Mistral',
+            category: 'Pisco',
+            price: 15000,
+            discount: 20,
+        },
+        {
+            _id: '3',
+            img: '/img/mistral.jpg',
+            name: 'Pisco Mistral',
+            category: 'Pisco',
+            price: 15000,
+            discount: 20,
+        },
+        {
+            _id: '4',
+            img: '/img/mistral.jpg',
+            name: 'Pisco Mistral',
+            category: 'Pisco',
+            price: 15000,
+            discount: 20,
+        },
+        {
+            _id: '5',
+            img: '/img/mistral.jpg',
+            name: 'Pisco Mistral',
+            category: 'Pisco',
+            price: 15000,
+            discount: 20,
+        },
+        {
+            _id: '6',
+            img: '/img/mistral.jpg',
+            name: 'Pisco Mistral',
+            category: 'Pisco',
+            price: 15000,
+            discount: 20,
+        },
+        {
+            _id: '7',
+            img: '/img/mistral.jpg',
+            name: 'Pisco Mistral',
+            category: 'Pisco',
+            price: 15000,
+            discount: 20,
+        },
+        {
+            _id: '8',
+            img: '/img/mistral.jpg',
+            name: 'Pisco Mistral',
+            category: 'Pisco',
+            price: 15000,
+            discount: 20,
+        },
+    ]
+}
