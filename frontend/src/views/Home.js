@@ -12,7 +12,8 @@ const Home = {
                 <div class="product-name">
                     <a href="/#/product/${product._id}">${product.name}</a>
                 </div>
-                <div class="category">${product.price}</div>
+                <div class="category">${product.category}</div>
+                <div class="price">$ ${product.price}</div>
             </div>
          </li>
          `).join('\n')}
