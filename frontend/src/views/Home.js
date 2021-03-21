@@ -1,20 +1,24 @@
+import axios from "axios";
 
 const Home = {
-    render: async () => {
-        const response = await fetch('http://localhost:5000/api/products', {
-            headers: {
-                'Content-Type': 'application/json'
-            },
-        });
-        if(!response || !response.ok) {
-            return `<div>Error in getting data</div>`
-        }
+  render: async () => {
+    const response = await axios({
+      url: "http://localhost:5000/api/products",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    if (!response || response.statusText !== "OK") {
+      return `<div>Error in getting data</div>`;
+    }
 
-        const products = await response.json();
+    const products = response.data;
 
-        return `
+    return `
         <ul class='products'>
-         ${products.map(product =>`
+         ${products
+           .map(
+             (product) => `
          <li>
             <div class="product">
                 <a href="/#/product/${product._id}"> <img src="${product.img}" alt="${product.name}"></a>
@@ -25,9 +29,11 @@ const Home = {
                 <div class="price">$ ${product.price}</div>
             </div>
          </li>
-         `).join('\n')}
-        `
-    }
-}
+         `
+           )
+           .join("\n")}
+        `;
+  },
+};
 
-export default Home
+export default Home;

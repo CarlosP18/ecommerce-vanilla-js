@@ -9,7 +9,7 @@ const routes = {
     "/product/:id": ProductDetail,
 }
 
-const router = () => {
+const router = async () => {
     const request = parseRequestUrl();
     const parseUrl = 
         (request.resource ? `/${request.resource}` : '/') +
@@ -17,7 +17,7 @@ const router = () => {
         (request.verb ? `${request.verb}` : '')
     const view = routes[parseUrl] ? routes[parseUrl] : Error404;
     const main = document.getElementById('main-container');
-    main.innerHTML = view.render()
+    main.innerHTML =  await view.render()
 }
 
 window.addEventListener('load', router);

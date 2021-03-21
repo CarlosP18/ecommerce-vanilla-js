@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   products: [
         {
             _id: '1',
@@ -11,7 +11,7 @@ module.exports = {
         {
             _id: '2',
             img: '/img/mistral.jpg',
-            name: 'Pisco Mistral',
+            name: 'Pisco ',
             category: 'Pisco',
             price: 15000,
             discount: 20,
@@ -64,5 +64,5 @@ module.exports = {
             price: 15000,
             discount: 20,
         },
-    ]
+    ],
 }
